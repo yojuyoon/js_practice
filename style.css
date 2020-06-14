@@ -1,12 +1,79 @@
+
+
 body {
-  background-color: #ecf0f1;
+  background-color: #7a7a7a;
+  font-family: "futura";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+li{
+  list-style-type: square;
+  color: #ff4200;
+  margin-bottom: 20px;
+}
+
+li span{
+  color:#ff4200;
+  font-size: 18px;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #ff4200;
+  background-color: rgb(255,255,255,0.6);
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.js-clock{
+  /* width: 550px;
+  height: 170px;
+  background-color: rgb(255,255,255,0.6); */
+  margin-top: 400px;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.34);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'kiona';
+  font-weight: 100;
+  padding-bottom: 10px;
+  color: white;
+
+}
+
+.userValue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 10px 10px 30px 2px rgba(0,0,0,0.27);
+  color: salmon;
+}
+
+input:focus {
+  outline: none;
 }
 
 .btn {
   cursor: pointer;
-}
-body {
-  color: #34495e;
+
 }
 
 .clicked {
@@ -16,6 +83,8 @@ body {
 .form,
 .greetings {
   display: none;
+    color: #ff4200;
+    font-size: 30px;
 }
 
 .showing{
@@ -28,9 +97,16 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0.7;
   z-index: -1;
   animation: fadeIn .5s linear;
+
 }
+
+span{
+  color: salmon;
+}
+
 
 @keyframes fadeIn {
   from{
