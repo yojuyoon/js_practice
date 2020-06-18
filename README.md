@@ -1,2 +1,2 @@
-# js_practice.github.io
+# js_practice
 vanilla JS_chrome_app
