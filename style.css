@@ -1,4 +1,6 @@
-
+:root {
+  --text-shadow : rgb(14, 14, 14) 2px 0 14px;
+}
 
 body {
   background-color: #7a7a7a;
@@ -9,32 +11,36 @@ body {
   flex-direction: column;
 }
 
+
 li{
   list-style-type: square;
-  color: #ff4200;
+  color: white;
   margin-bottom: 20px;
+  text-shadow: var(--text-shadow);
 }
 
 li span{
-  color:#ff4200;
+  color:white;
   font-size: 18px;
+  text-shadow: var(--text-shadow);
 }
 
 button {
   width: 30px;
   height: 30px;
+  margin-left: 10px;
   border-radius: 20px;
-  border: 1px solid #ff4200;
-  background-color: rgb(255,255,255,0.6);
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
-  margin-right: 10px;
+  color: white;
+  text-shadow: var(--text-shadow);
+  cursor: pointer;
 }
 
 .js-clock{
-  /* width: 550px;
-  height: 170px;
-  background-color: rgb(255,255,255,0.6); */
   margin-top: 400px;
   font-size: 60px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.34);
@@ -83,8 +89,9 @@ input:focus {
 .form,
 .greetings {
   display: none;
-    color: #ff4200;
-    font-size: 30px;
+  color: white;
+  font-size: 36px;
+  text-shadow: var(--text-shadow);
 }
 
 .showing{
